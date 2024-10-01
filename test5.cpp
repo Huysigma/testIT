@@ -30,12 +30,12 @@ main(){
     int a,m,n,x,S;
     cout<<"nhap chieu dai, chieu rong san: ";
     cin>>m>>n;
-    cout<<"nhap dien tich vien da: ";
+    cout<<"nhap chieu dai canh vien da: ";
     cin>>a;
     S=m*n;
     x=S/(a*a);
     cout<<"dien tich san la: "<<S<<endl<<"so vien da can dung la: "<<x;
-    return;
+    return 0;
 }
 //lit nuoc
 //can n lit nuoc
@@ -52,9 +52,9 @@ main(){
         cout<<"vay so tien can dung la: "<<t;
     }else{
         t=(n/2)*b+a;
-        cout<<"vay so tien can dung la: "<<t
+        cout<<"vay so tien can dung la: "<<t;
     }
-    return;
+    return 0;
 }
 //con ech
 //right=a; gs=2
@@ -76,7 +76,7 @@ main(){
         td=(a-b)*(k/2)+a;
         cout<<"vay toa do moi la: "<<td;
     }
-return;
+return 0;
 }
 //jack 5 cu
 //gia su J trich 5% so tien de mua qua
@@ -106,3 +106,5 @@ main(){
      Jack(S);
     }
 }
+// kiem tra tinh doi xung
+// 
