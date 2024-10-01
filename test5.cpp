@@ -1,12 +1,13 @@
 //btapK
 //tinh hieu
 #include<iostream>
+#include<math.h>
 using namespace std;
 int main(){
     int a,b;
     cin >>a>>b;
     cout<<"hieu hai so nguyen la: "<<abs(a-b);
-    return;
+    return 0;
 }
 //tinh chan le
 #include<iostream>
@@ -19,7 +20,7 @@ int main(){
     }else{
         cout<<"so le"
     }
-    return;
+    return 0;
 }
 //vien da
 //S=n*m
