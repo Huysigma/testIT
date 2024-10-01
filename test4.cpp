@@ -47,30 +47,49 @@
 // }
 
 //Giải phương trình bậc 2
+// #include<iostream>
+// #include<math.h>
+// using namespace std;
+// void Huy(double a,double b, double c){
+//     double D, x1, x2;
+//      D=b*b-4*a*c;
+//     if(D<0){
+//         cout<<"pt vo nghiem";
+//     }else if(D==0){
+//         cout<<"pt co nghiem kep: "<<-b/(2*a) <<endl;
+//     }else{
+//         x1=(-b+sqrt(D))/(2*a);
+//         x2=(-b-sqrt(D))/(2*a);
+//         cout<<"pt co 2 nghiem: "<<x1<<", "<<x2<<endl;
+//     }
+// }
+// int main(){
+//     cout<<"hay nhap so: ";
+//     double a, b, c;
+//     cin>>a>>b>>c;
+//    if(a==0){
+//     cout<<"pt co 1 nghiem: "<<-c/b;
+//    }else{
+//     Huy(a, b, c);
+//    }
+// return 0;
+// }
+//lit nuoc
+//can n lit nuoc
+//a co 1 lit, b co 2 lit. gia su b=2a
+//can dung so tien it nhat de mua nuoc
 #include<iostream>
-#include<math.h>
 using namespace std;
-void Huy(double a,double b, double c){
-    double D, x1, x2;
-     D=b*b-4*a*c;
-    if(D<0){
-        cout<<"pt vo nghiem";
-    }else if(D==0){
-        cout<<"pt co nghiem kep: "<<-b/(2*a) <<endl;
+main(){
+    int n, t, a=1000, b=2000;
+    cout<<"so lit nuoc can dung la: ";
+    cin>>n;
+    if(n%2==0){
+        t=b*n;
+        cout<<"vay so tien can dung la: "<<t;
     }else{
-        x1=(-b+sqrt(D))/(2*a);
-        x2=(-b-sqrt(D))/(2*a);
-        cout<<"pt co 2 nghiem: "<<x1<<", "<<x2<<endl;
+        t=(n/2)*b+a;
+        cout<<"vay so tien can dung la: "<<t;
     }
-}
-int main(){
-    cout<<"hay nhap so: ";
-    double a, b, c;
-    cin>>a>>b>>c;
-   if(a==0){
-    cout<<"pt co 1 nghiem: "<<-c/b;
-   }else{
-    Huy(a, b, c);
-   }
-return 0;
+    return 0;
 }
