@@ -78,18 +78,36 @@
 //can n lit nuoc
 //a co 1 lit, b co 2 lit. gia su b=2a
 //can dung so tien it nhat de mua nuoc
+// #include<iostream>
+// using namespace std;
+// main(){
+//     int n, t, a=1000, b=2000;
+//     cout<<"so lit nuoc can dung la: ";
+//     cin>>n;
+//     if(n%2==0){
+//         t=b*n;
+//         cout<<"vay so tien can dung la: "<<t;
+//     }else{
+//         t=(n/2)*b+a;
+//         cout<<"vay so tien can dung la: "<<t;
+//     }
+//     return 0;
+// }
 #include<iostream>
 using namespace std;
-main(){
-    int n, t, a=1000, b=2000;
-    cout<<"so lit nuoc can dung la: ";
-    cin>>n;
-    if(n%2==0){
-        t=b*n;
-        cout<<"vay so tien can dung la: "<<t;
-    }else{
-        t=(n/2)*b+a;
-        cout<<"vay so tien can dung la: "<<t;
-    }
+
+long long giaiThua(int n) {
+    if (n == 0 || n == 1)
+        return 1;
+    return n * giaiThua(n - 1);
+}
+
+int main() {
+    int n;
+    cout << "Nhap so nguyen: ";
+    cin >> n;
+    
+    cout << "Giai thua cua " << n << " la: " << giaiThua(n) << endl;
+    
     return 0;
 }
